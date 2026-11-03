@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Медитация — Таймер</title>
   <link rel="preload" as="image" href="assets/bg.jpg">
+  <link rel="preload" as="image" href="assets/img02.png">
   <style>
     :root {
       --timer-color: #f3f6f9;
@@ -67,6 +68,16 @@
       z-index: 2;
       pointer-events: none;
       text-align: center;
+    }
+
+    #logo {
+      width: clamp(110px, 11vw, 170px);
+      height: auto;
+      margin-bottom: clamp(14px, 2.6vh, 28px);
+      opacity: 0.92;
+      filter: drop-shadow(0 2px 14px rgba(0, 0, 0, 0.4));
+      user-select: none;
+      -webkit-user-drag: none;
     }
 
     #modeLabel {
@@ -430,6 +441,7 @@
   <div id="vignette"></div>
 
   <div id="center">
+    <img id="logo" src="assets/img02.png" alt="">
     <div id="modeLabel">Киртан</div>
     <div id="timeDisplay">15:00</div>
     <div id="underControls">
